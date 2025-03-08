@@ -8,6 +8,8 @@ public class Main {
         //new zad5();
         //new zad6();
         //new zad8();
-        new zad9();
+        //new zad9();
+        //new zad11();
+        new zad12();
     }
 }
