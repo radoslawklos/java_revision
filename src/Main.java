@@ -4,6 +4,7 @@ public class Main {
         //new zad1();
         //new zad2();
         //new zad3();
-        new zad4().usun();
+        //new zad4().usun();
+        new zad5();
     }
 }
