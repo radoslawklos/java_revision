@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class zad3 {
@@ -11,9 +12,9 @@ public class zad3 {
         int a = scan.nextInt();
         String result = "";
         for(int i = 0; i < a; i ++){
-            String newWord = words[(int)(Math.random()* words.length)];
+            String newWord = words[(int)(Math.random()* words.length)].toLowerCase();
             if(!(result.isEmpty())) {
-                if (result.charAt(result.length()-1) == '.') {
+                if (result.charAt(result.length()-1) == '.' || result.charAt(result.length()-1) == '?') {
                     String tmp = newWord.substring(0, 1).toUpperCase();
                     newWord = tmp + newWord.substring(1);
                 }
@@ -27,7 +28,7 @@ public class zad3 {
             }
             result += newWord;
         }
-        if (result.charAt(result.length()-1) != '.') {
+        if (result.charAt(result.length()-1) != '.' || result.charAt(result.length()-1) == '?') {
             result += ".";
         }
         System.out.println(result);
