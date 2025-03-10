@@ -14,7 +14,8 @@ public class Main {
         //new zad13();
         //new zad14();
         //new zad15();
-        new zad16();
+        //new zad16();
+        new zad18();
 
     }
 }
